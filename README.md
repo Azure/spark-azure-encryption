@@ -157,6 +157,7 @@ SELECT *, encrypt([column name],'https://<keyvault or hsm url>/keys/<key name>/<
 ```
 
 These operations require a per-row operation to call the remote Key Vault / HSM for the decryption process, and performance will vary (see "Performance" above for more details).
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
