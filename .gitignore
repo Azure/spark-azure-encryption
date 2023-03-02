@@ -1,0 +1,8 @@
+.DS_Store
+/.metals
+/.vscode
+/.apt_generated
+/.apt_generated_tests
+/target
+*.jar
+
