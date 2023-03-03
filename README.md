@@ -121,6 +121,9 @@ After your Spark cluster has started, the UDF needs registered, you can do that 
 ```python
 from pyspark.sql.functions import col, udf, expr
 from pyspark.sql.types import StringTypespark.udf.registerJavaFunction("encrypt", "com.microsoft.solutions.keyvaultcrypto.doEncryption", StringType())
+
+spark.udf.registerJavaFunction("encrypt", "com.microsoft.solutions.keyvaultcrypto.doEncryption", StringType())
+spark.udf.registerJavaFunction("decrypt", "com.microsoft.solutions.keyvaultcrypto.doDecryption", StringType())
 ```
 
 ### Encrypting Data
